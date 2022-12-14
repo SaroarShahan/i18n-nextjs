@@ -1,0 +1,29 @@
+{
+    "title": {
+        "plain": "Bienvenida a",
+        "link": "Next.js!"
+    },
+    "description": {
+        "plain": "Comienza editando",
+        "code": "pages/index.tsx"
+    },
+    "links": {
+        "link1": {
+            "title": "Documentación",
+            "description": "Encuentre información detallada sobre las funciones y la API de Next.js."
+        },
+        "link2": {
+            "title": "Aprender",
+            "description": "Aprende sobre Next.js en un curso interactivo con cuestionarios!"
+        },
+        "link3": {
+            "title": "Ejemplos",
+            "description": "Descubra e implemente proyectos estándar de Next.js de ejemplo."
+        },
+        "link4": {
+            "title": "Desplegar",
+            "description": "Implemente instantáneamente su sitio Next.js en una URL pública con Vercel."
+        }
+        
+    }
+}
