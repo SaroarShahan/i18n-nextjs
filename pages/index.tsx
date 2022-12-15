@@ -6,15 +6,18 @@ import { Header } from '../components/header'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const { t } = useTranslation()
-  const { t: commonT } = useTranslation("common")
+  const { t } = useTranslation(["dashboard", "common"])
 
-  const description = commonT("metaDescription")
+  const description = t("metaDescription", {
+    ns: "common"
+  })
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>{commonT("title")}</title>
+        <title>{t("title", {
+          ns: "common"
+        })}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -68,7 +71,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {commonT("footer")}{' '}
+          {t("footer", {
+            ns: "common"
+          })}{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
