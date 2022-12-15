@@ -6,7 +6,7 @@ import { Header } from '../components/header'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const { t } = useTranslation(["dashboard", "common"])
+  const { t } = useTranslation("dashboard")
 
   const description = t("metaDescription", {
     ns: "common"
