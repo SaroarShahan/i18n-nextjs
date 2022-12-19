@@ -9,6 +9,7 @@ const changeLanguage = (i18n: i18n, language: string) => {
 const languages = [
   {code: 'en', translateKey: 'English'},
   {code: 'es', translateKey: 'Espanish'},
+  {code: 'bn', translateKey: 'Bangla'},
 ]
 
 export const Header = () => {
